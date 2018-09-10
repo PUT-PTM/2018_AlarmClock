@@ -13,33 +13,33 @@ Potrzebne elementy:
 5. Kabelki
 
 Podłączenie:
-1. Wyświetlacz 8-segmentowy --> STM32F411:
-- VCC --> VCC 3V |
-- 4   --> GPIOD3 |
-   3   --> GPIOD2 |
-   2   --> GPIOD1 |
-   1   --> GPIOD0 |
-   a   --> GPIOE4 |
-   b   --> GPIOE5 |
-   c   --> GPIOE6 |
-   d   --> GPIOE7 |
-   e   --> GPIOE8 |
-   f   --> GPIOE9 |
-   g   --> GPIOE10 |
-   h   --> GPIOE11 |
+1. Wyświetlacz 8-segmentowy -> STM32F411
+- VCC -> VCC 3V
+- 4   -> GPIOD3
+- 3   -> GPIOD2
+- 2   -> GPIOD1
+- 1   -> GPIOD0
+- a   -> GPIOE4
+- b   -> GPIOE5
+- c   -> GPIOE6
+- d   -> GPIOE7
+- e   -> GPIOE8
+- f   -> GPIOE9
+- g   -> GPIOE10
+- h   -> GPIOE11
    
-2. Matryca 2x4 tact switch --> STM32F411: 
-   G  --> GND |
-   K0 --> GPIOB0 |
-   K1 --> GPIOB1 |
-   K2 --> GPIOB2 |
+2. Matryca 2x4 tact switch --> STM32F411
+- G  -> GND
+- K0 -> GPIOB0
+- K1 -> GPIOB1
+- K2 -> GPIOB2
    
-3. LM386M --> STM32F411: 
-   5V   --> VCC 5V |
-   VCC  --> VCC 3V |
-   GND  --> GND |
-   ADC1 --> GPIOA1 |
-   AIN  --> GPIOA4 |
+3. LM386M --> STM32F411
+- 5V   -> VCC 5V
+- VCC  -> VCC 3V
+- GND  -> GND
+- ADC1 -> GPIOA1
+- AIN  -> GPIOA4
 
 Kompilacja: 
 Program main.c należy skompilować przy użyciu System Workbench for STM32 oraz dołączyć plik Audio2.h
