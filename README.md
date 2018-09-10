@@ -13,9 +13,9 @@ Potrzebne elementy:
 5. Kabelki
 
 Podłączenie:
-1. Wyświetlacz 8-segmentowy --> STM32F411: 
-   VCC --> VCC 3V |
-   4   --> GPIOD3 |
+1. Wyświetlacz 8-segmentowy --> STM32F411:
+- VCC --> VCC 3V |
+- 4   --> GPIOD3 |
    3   --> GPIOD2 |
    2   --> GPIOD1 |
    1   --> GPIOD0 |
