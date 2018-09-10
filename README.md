@@ -1,3 +1,4 @@
+
 Cel projektu
 Zaprezentowany projekt ma na celu imitować pracę budzika, w tym: odliczać godzinę, ustawiać ją oraz uruchamiać alarm z opcją wyłączenia go. 
 
