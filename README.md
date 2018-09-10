@@ -28,13 +28,13 @@ Podłączenie:
 - g   -> GPIOE10
 - h   -> GPIOE11
    
-2. Matryca 2x4 tact switch --> STM32F411
+2. Matryca 2x4 tact switch -> STM32F411
 - G  -> GND
 - K0 -> GPIOB0
 - K1 -> GPIOB1
 - K2 -> GPIOB2
    
-3. LM386M --> STM32F411
+3. LM386M -> STM32F411
 - 5V   -> VCC 5V
 - VCC  -> VCC 3V
 - GND  -> GND
@@ -51,7 +51,7 @@ Użycie:
 4. Alarm wyłączamy przy użyciu przycisku USER
 
 Autorzy: 
-1. Katarzyna Dykiert,
+1. Katarzyna Dykiert:
 katarzyna.dykiert@student.put.poznan.pl
-2. Małgorzata Hanyż, 
+2. Małgorzata Hanyż:
 malgorzata.hanyz@student.put.poznan.pl
