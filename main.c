@@ -90,10 +90,10 @@ void TIM4_IRQHandler(void)
 
 void TIM2_IRQHandler(void)
 {
-	//JEŒLI USTAWIAMY BUDZIK
-	if(mode == 1){
-		if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
-		{
+	if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET)
+	{
+		//JEŒLI USTAWIAMY BUDZIK
+		if(mode == 1){
 			if(counter_seg==0){ //JEŒLI MA MIGAÆ PIERWSZY(0) SEGMENT
 				if(mig==1){ //zapalony (0,1,2,3)
 					if(segment == 0)
@@ -367,13 +367,9 @@ void TIM2_IRQHandler(void)
 				}
 			}
 		}
-	}
-
-	//JEŒLI NIE MA TRYBU BUDZIKA
-	else if(mode == 0){
-
-		if(set == 0){ // JEŒLI USTAWIAMY GODZINÊ
-			if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET){
+		//JEŒLI NIE MA TRYBU BUDZIKA
+		else if(mode == 0){
+			if(set == 0){ // JEŒLI USTAWIAMY GODZINÊ
 				if(counter_seg==0){ //JEŒLI MA MIGAC PIERWSZY(0) SEGMENT
 					if(mig==1){ //zapalony (0,1,2,3)
 						if(segment == 0)
@@ -647,10 +643,8 @@ void TIM2_IRQHandler(void)
 					}
 				}
 			}
-		}
 
-		if(set == 1){ //JEŒLI CZAS SOBIE LECI TYLKO (set = 1)
-			if(TIM_GetITStatus(TIM2, TIM_IT_Update) != RESET){
+			if(set == 1){ //JEŒLI CZAS SOBIE LECI TYLKO (set = 1)
 				if(mig==1){ //tutaj sobie mruga kropeczka
 					if(segment == 0)
 					{
